@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "3a33cc17-1d9f-4a7f-97e5-6035d716a3fe",
+		"name": "UserManageAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24690899"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rahulprojects96@gmail.com\",\r\n    \"name\":\"Rohit\",\r\n    \"password\":\"rohit7781\",\r\n    \"password2\":\"rohit7781\",\r\n    \"tc\":\"True\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rahulprojects96@gmail.com\",\r\n    \"password\":\"rahul2112\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc1MTAyNzQxLCJpYXQiOjE2NzUxMDE1NDEsImp0aSI6ImIwNjNiYjI1OGNhNDRjMDQ4NjliNmFjNDJhY2M4MjliIiwidXNlcl9pZCI6NH0.QIwfNSjisZlMsDPL6HcEmLm0eMtdexXiH-KnS5duJsM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/changepassword/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"changepassword",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Password Reset Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"rahulprojects96@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/send-reset-password-email/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"send-reset-password-email",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset User Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"rahul2112\",\r\n    \"password2\":\"rahul2112\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user/reset-password/Ng/bj05cn-70fb352392f521df8b00a7da348e136d/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"reset-password",
+						"Ng",
+						"bj05cn-70fb352392f521df8b00a7da348e136d",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
